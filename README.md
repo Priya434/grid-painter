@@ -3,4 +3,4 @@ A grid-based painting website.
 
 Does not work on touch based devices.
 
-CSS help by https://github.com/Adityarawat313
+CSS in collaboration with [Aditya Rawat](https://github.com/Adityarawat313)
