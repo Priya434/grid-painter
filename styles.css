@@ -1,0 +1,175 @@
+/* ..........inputs area.......... */
+/* .....slider div..... */
+.slider-div {}
+
+/* slider label */
+label {}
+
+h1 {
+  font-size: 312%;
+  right: 33%;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 250%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #673ab7;
+}
+
+.head-div {
+  text-align: center;
+  background-color: #512da8;
+  /* height: 250px; */
+  text-align: center;
+  padding: 2.5em;
+}
+
+.parent {
+  display: flex;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15rem; */
+  margin: 5rem;
+}
+
+.slider-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4em;
+  padding-bottom: 2em;
+}
+
+#slider {
+  /* width: 10rem; */
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: #673ab7;
+  border-radius: 1em;
+  cursor: pointer;
+  width: 150%;
+  height: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: inherit;
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  transition: transform 0.1s ease-in-out;
+}
+
+input[type="color"]:hover {
+  transform: scale(1.05);
+}
+
+input[type="color"]:active {
+  transform: scale(1);
+  transition: transform 0.05s ease-in-out;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: 2px solid;
+  border-radius: 100%;
+  box-shadow: 3px 3px 5px #4a474d;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: 2px solid;
+  border-radius: 100%;
+}
+
+/* .....buttons..... */
+button {
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+}
+
+button#painter {
+  background-color: #512da8;
+  color: white;
+}
+
+button#randomizer {
+  background-image: linear-gradient(135deg, violet, indigo, green, orange, red);
+  color: white;
+}
+
+button#eraser {
+  background-color: black;
+  color: whitesmoke;
+}
+
+button#eraser:focus {
+  background-color: whitesmoke;
+  color: black;
+}
+
+button#reloader {
+  border-color: #673ab7;
+  color: #673ab7;
+}
+
+button:is(hover, focus) {
+  transform: scale(1.1);
+}
+
+button:focus {
+  box-shadow: 3px 3px #000000;
+}
+
+/* input[type='color']::-webkit-color-swatch-wrapper {
+padding: 0;
+} */
+/* ..........sketch area.......... */
+
+#sketch-area {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+/* .....grids cells container..... */
+#grids {
+  background-color: rgb(116, 121, 245);
+  border: 1px solid;
+  height: 25rem;
+  width: 25rem;
+  display: grid;
+}
+
+/* .....grids cells..... */
+.grids-cell {
+  border: 0.1px solid;
+  background-color: #000000;
+  cursor: url("cursor-brush-2.png"), auto;
+  user-select: none;
+}
